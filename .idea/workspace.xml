@@ -59,11 +59,6 @@
               <item name="testjenkins" type="b2602c69:ProjectViewProjectNode" />
               <item name="testjenkins" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="testjenkins" type="b2602c69:ProjectViewProjectNode" />
-              <item name="testjenkins" type="462c0819:PsiDirectoryNode" />
-              <item name="venv" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>

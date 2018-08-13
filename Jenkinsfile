@@ -33,10 +33,10 @@ pipeline {
       }
     }
 
-    stage('Zip and push files') {
+    /*stage('Zip and push files') {
       steps {
       cmd "aws cloudformation deploy --template-file "devops\cloudformation.yaml" --stack-name "paidsocialmedia""
       }
-    }
+    }*/
   }
 }

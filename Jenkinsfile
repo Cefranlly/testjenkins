@@ -1,7 +1,7 @@
 pipeline {
   agent any
 
-  enviroment{
+  environment{
     SLACK_CHANNEL         = '#deployment'
     SLACK_CREDENTIAL_ID   = 'slack-demo'
     SLACK_TEAM_DOMAIN     = 'PruebasJenkins'
@@ -32,11 +32,5 @@ pipeline {
       git poll: true, url: 'https://github.com/Cefranlly/testjenkins.git'
       }
     }
-
-    /*stage('Zip and push files') {
-      steps {
-      cmd "aws cloudformation deploy --template-file "devops\cloudformation.yaml" --stack-name "paidsocialmedia""
-      }
-    }*/
   }
 }

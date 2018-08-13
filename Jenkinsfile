@@ -9,13 +9,14 @@ pipeline {
   }
 
   parameters {
-        string(name: 'AWS_DEFAULT_REGION', defaultValue: 'us-east-1', description: 'The region to deploy to'),
+        string(name: 'AWS_DEFAULT_REGION', defaultValue: 'us-east-1', description: 'The region to deploy to')
         choice(
             choices: 'first_deploy\nother_deploy'
             description: 'during the first deploy AWS services must be created',
             name: 'DEPLOY_TYPE'
         )
   }
+
   stages {
 
     stage('Config Slack Notification'){

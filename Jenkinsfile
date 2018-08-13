@@ -12,13 +12,13 @@ pipeline {
 
     stage('Checkout Git') {
       steps {
-      git poll: true, url: 'git@github.com:FOXITES/ba-dbi-connectors.git'
+      git poll: true, url: 'https://github.com/Cefranlly/testjenkins.git'
       }
     }
 
     stage('Zip and push files') {
       steps {
-      sh "aws cloudformation deploy --template-file "devops\cloudformation.yaml" --stack-name "paidsocialmedia""
+      cmd "aws cloudformation deploy --template-file "devops\cloudformation.yaml" --stack-name "paidsocialmedia""
       }
     }
   }

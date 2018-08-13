@@ -22,7 +22,7 @@ pipeline {
     stage('Config Slack Notification'){
         steps{
             slackSend baseUrl: env.SLACK_BASE_URL, channel: env.SLACK_CHANNEL, color: '#D4DB40',
-            message: 'Welcome to Jenkins!', teamDomain: env.SLACK_TEAM_DOMAIN,
+            message: 'Welcome to Jenkins bitches!', teamDomain: env.SLACK_TEAM_DOMAIN,
             tokenCredentialId: env.SLACK_CREDENTIAL_ID
         }
     }
